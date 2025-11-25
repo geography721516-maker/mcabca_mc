@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medinipur College - BCA Department</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rez: {
+                bg: '#050505',       // Deep Black
+                grid: '#2e1065',     // Dark Purple for Grid
+                purple: '#a855f7',   // Electric Purple (Main Accent)
+                pink: '#d946ef',     // Secondary Accent
+                card: '#111111',     // Card BG
+                text: '#ffffff',
+                border: '#ffffff',   // White borders for high contrast
+                muted: '#9ca3af'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            boxShadow: {
+              'neo': '5px 5px 0px 0px #a855f7',
+              'neo-hover': '7px 7px 0px 0px #d946ef',
+              'neo-white': '5px 5px 0px 0px #ffffff',
+              'neo-pink': '5px 5px 0px 0px #d946ef',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #050505;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      
+      /* Resonate Grid Pattern */
+      .bg-grid-pattern {
+        background-size: 40px 40px;
+        background-image: 
+          linear-gradient(to right, rgba(168, 85, 247, 0.1) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(168, 85, 247, 0.1) 1px, transparent 1px);
+      }
+
+      /* Neo-Brutalist Utilities */
+      .neo-card {
+        background-color: #111;
+        border: 2px solid white;
+        box-shadow: 5px 5px 0px 0px #a855f7;
+        transition: all 0.2s ease-in-out;
+      }
+      .neo-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 8px 8px 0px 0px #d946ef;
+      }
+      
+      .neo-btn {
+        background-color: #a855f7;
+        color: white;
+        border: 2px solid white;
+        box-shadow: 4px 4px 0px 0px white;
+        font-weight: 800;
+        text-transform: uppercase;
+        transition: all 0.1s;
+      }
+      .neo-btn:hover {
+        background-color: #d946ef;
+        transform: translate(-1px, -1px);
+        box-shadow: 6px 6px 0px 0px white;
+      }
+      .neo-btn:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0px 0px white;
+      }
+
+      /* Sticker Rotation */
+      .sticker-1 { transform: rotate(2deg); }
+      .sticker-2 { transform: rotate(-1.5deg); }
+      .sticker-3 { transform: rotate(1deg); }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #050505; border-left: 2px solid #222; }
+      ::-webkit-scrollbar-thumb { background: #a855f7; border: 2px solid #050505; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased selection:bg-rez-pink selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
